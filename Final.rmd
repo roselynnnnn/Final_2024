@@ -71,8 +71,51 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-This data 
+This data shows that the Chi-Square P-Value is 2.2e-16 and the Fisher exact test shows that the P-value is 2.2e-16 which is significantly lower than 0.05 which means we reject the null hypothesis.
+
+## Conclusion
+
+The bar chart shows that you are less likely to contract covid91 if you did receive the vaccine. The numerical data shows the results in percentages. Within the placebo group 73.80% of individuals got infected with covid91. While in the vaccine group 26.20% contracted covid91. This indicates that reveiving the vaccine as a ale significantly reduces the risk of contracted covid91. The inferential data shows a Chi-Square P-Value of 2.2e-16, this also includes the Fisher exact test shows that the P-value is 2.2e-16 which is significantly lower than 0.05 which means we reject the null hypothesis. All in all these examples and simulations show that as a male you are far less likely to contract covid91 upon receiving the vaccine.
+
 ## Females
+
+## Methods 
+
+Question: Is the vaccine effective in preventing covid91 in females?
+
+$H_0$: The vaccine is not effective in preventing covid91 in females.
+
+$H_A$: The vaccine if effective in preventing covid91 in females.
+
+infected~sex(F)
+categorical~categorical
+
+We'll be using Cat~Cat
+
+## Graphical Results
+
+```{r}
+Female <- FinalDat[FinalDat$sex=='F',]
+```
+
+```{r}
+barchartGC(~infected + treatment,data=Female)
+barchartGC(~infected + treatment,data=Female, type="percent")
+
+```
+
+This bar chart shows that females are less likely to contract covid91 after reveiving the vaccine.
+
+## Numerical Results
+
+```{r}
+table1 <- xtabs(~infected + treatment, data=Female)
+rowPerc(table1)
+colPerc(table1)
+```
+
+The numerical data shows the results in percentages. Within the placebo group 64.93% of individuals got infected with covid91. While in the vaccine group 35.07% contracted covid91. This indicates that receiving the vaccine as a female significantly reduces the risk of contracted covid91.
+
 
 
 ## LGBTQ
