@@ -236,3 +236,27 @@ The chi-square test shows a p-value of 1.414e-10 data and the fisher exact test 
 The bar chart shows that you are far more likely to contract Covid91 if you did receive the vaccine as a drug user. The numerical data shows the results in percentages. Within the placebo group 8.33% of individuals got infected with Covid91. While in the vaccine group 91.67% contracted covid-91.This indicates that receiving the vaccine as a drug user significantly increases the risk of contracting Covid-91. The inferential data shows a Chi-Squared P-Value of 1.414e-10, and the data includes a Fisher exact test showing that the P-Value is 3.261e-12 which is significantly lower than 0.05 which means we reject the null hypothesis.In summation these examples and simulations show that as a drug user you are far more likely to contract covid-91 if you receive the vaccine.
 
 # Overall Results and Conclusions
+
+##Male conclusion
+
+When trying to figure out the effectiveness of the vaccine in males, the bar chart shows that you are less likely to contract covid91 if you did receive the vaccine. The numerical data shows the results in percentages. Within the placebo group 73.80% of individuals got infected with covid91. While in the vaccine group 26.20% contracted covid-91.This indicates that receiving the vaccine as a male significantly reduces the risk of contracted covid-91. The inferential data shows the Chi-Squared P-Value is 2.2e-16, and the data also shows the Fisher exact test that shows that the P-Value is 2.2e-16 which is significantly lower than 0.05 which means we reject the null hypothesis. All in all these examples and simulations show that is as a male you are far less likely to contract covid-91 upon receiving the vaccine.
+
+## Female Conclusion
+
+When testing the effectiveness of the vaccine in females, the bar chart shows that you are less likely to contract Covid91 if you did receive the vaccine.The numerical data shows the results in percentages. Within the placebo group 64.93% of individuals got infected with Covid91. While in the vaccine group 35.07% contracted covid-91. This indicates that receiving the vaccine as a female significantly reduces the risk of contracted Covid-91. The inferential data shows the Chi-Square P-Value of 1.914e-08, and the data also includes the Fisher exact test that shows that the P-Value is 1.246e-08 which is significantly lower than 0.05 which means we reject the null hypothesis. In summation these examples and simulations show that as female you are far less likely to contract covid-91 if you receive the vaccine.
+
+## LGBTQ Conclusion
+
+When testing the effectiveness of the vaccine on members of the LGBTQ community, the bar chart shows that you are less likely to contract Covid91 if you did receive the vaccine.The numerical data shows the results percentages. Within the placebo group 80.00% of individuals got infected with Covid91. While in the vaccine group 20.00% contracted covid-91. This indicates that receiving the vaccine as a LGBTQ member significantly reduces the risk of contracted Covid-91. The inferential data shows that the Chi-Squared p-Value is 2.266e-86, and the data also includes the Fisher exact test that shows that the P-Value is 7.269e-07 which is significantly lower than 0.05 which means we reject the null hypothesis.In summation these examples and simulations show that is as a member of the LGBT community you are far less likely to contract covid-91 if you receive the vaccine.
+
+## Drug User Conclusion
+
+When testing the effectiveness of the vaccine on people who are drug users, the bar chart shows that you are far more likely to contract Covid91 if you did receive the vaccine as a drug user.
+The numerical data shows the results in percentages. Within the placebo group 8.33% of individuals got infected with Covid91. While in the vaccine group 91.67% contracted covid-91. This indicates that receiving the vaccine as a drug user significantly increases the risk of contracted Covid-91.
+The inferential data shows that the Chi-Squared P-Value is 1.414e-10, and the data also includes the Fisher exact test that shows that the P-Value 3.261e-12 which is significantly lower than 0.05 which means we reject the null hypothesis. In summation these examples and simulations show that is as a drug user you are far more likely to contract covid-91 if you receive the vaccine.
+
+## Overall Conclusion
+
+Overall, upon reviewing the data it is clear that receiving the vaccine will always have an effect on the person receiving it.The data clear shows that receiving the vaccine is generally effective in preventing contraction of Covid-91 if you are male,female, or a member of the LGBTQ community. However, the opposite is true for people who are drug users. According the studies conducted you are at a much higher risk of contracting Covid-91 if you are a drug user. Presumably the opposite effect of the vaccine's purpose.
+
+
