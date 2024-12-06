@@ -26,7 +26,52 @@ A new  preventative vaccine (covid921) is under test in clinical trials. Given t
 
 ## Males
 
+##Methods
 
+Question: Is the covid91 vaccine effective in males?
+
+$H_0$: The vaccine is not effective in preventing covid91 in males.
+
+$H_A$: The vaccine if effective in preventing covid91 in males.
+
+infected~sex(M)
+categorical~categorical
+
+We'll be using Cat~Cat
+
+## Graphical Results
+
+```{r}
+Male <- FinalDat[FinalDat$sex=='M',]
+```
+
+```{r}
+barchartGC(~infected + treatment,data=Male)
+barchartGC(~infected + treatment,data=Male, type="percent")
+
+```
+
+From this bar chart it shows that you are less likely to contract covid91 if you did receive the vaccine.
+
+## Numerical results
+
+```{r}
+table1 <- xtabs(~infected + treatment, data=Male)
+rowPerc(table1)
+colPerc(table1)
+```
+
+The numerical data shows the results in percentages. Within the placebo group 73.80% of individuals got infected with covid91. While in the vaccine group 26.20% contracted covid91. This indicates that receiving the vaccine as a male significantly reduces the risk of contracted covid91.
+
+## Inferential Results
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+This data 
 ## Females
 
 
