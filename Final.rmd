@@ -32,7 +32,7 @@ Question: Is the covid91 vaccine effective in males?
 
 $H_0$: The vaccine is not effective in preventing covid91 in males.
 
-$H_A$: The vaccine if effective in preventing covid91 in males.
+$H_A$: The vaccine is effective in preventing covid91 in males.
 
 infected~sex(M)
 categorical~categorical
@@ -85,7 +85,7 @@ Question: Is the vaccine effective in preventing covid91 in females?
 
 $H_0$: The vaccine is not effective in preventing covid91 in females.
 
-$H_A$: The vaccine if effective in preventing covid91 in females.
+$H_A$: The vaccine is effective in preventing covid91 in females.
 
 infected~sex(F)
 categorical~categorical
@@ -128,13 +128,111 @@ The Chi-Square test shows a P-value of 1.914e-08 and the fisher exact test shiws
 
 ## Conclusion
 
-The bar chart shows that uou are less likely to contract covid91 if you did reveive the vaccine. The numerical data shows the results in percentages. Within the placebo group 64.93% of indivuals got infected with covid91. While in the vaccine group 35.07% contracted covid91. This indicates that receiving the vaccing as a female reduces the risk of contracted covid91. The inferential data shows a Chi-square p-value of 1.914e-08, and this data also includes the Fisher exact test shows that te p-value is 1.246e-08 which is significantly lower than 0.05 which means we reject the null hypothesis. In summation these examples and simulations shows that as a female you are far less likely to contract covid91 if you receive the vaccine.
+The bar chart shows that uou are less likely to contract covid91 if you did reveive the vaccine. The numerical data shows the results in percentages. Within the placebo group 64.93% of indivuals got infected with covid91. While in the vaccine group 35.07% contracted covid91. This indicates that receiving the vaccine as a female reduces the risk of contracted covid91. The inferential data shows a Chi-square p-value of 1.914e-08, and this data also includes the Fisher exact test shows that the p-value is 1.246e-08 which is significantly lower than 0.05 which means we reject the null hypothesis. In summation these examples and simulations shows that as a female you are far less likely to contract covid91 if you receive the vaccine.
 
 ## LGBTQ
 
+## Methods
 
+Question: Is the vaccine effective in preventing covid91 in members of the LGBTQ community?
+
+$H_0$: The vaccine is not effective in preventing covid91 in members of the LGBTQ community.
+
+$H_A$: The vaccine is effective in preventing covid91 in members of the LGBTQ community.
+
+infected~LGBTQ(gay)
+categorical~categorical
+
+We'll be using Cat~Cat
+
+## Graphical Results
+
+```{r}
+LGBTQ <- FinalDat[FinalDat$LGBTQ=='gay',]
+```
+
+```{r}
+barchartGC(~infected + treatment,data=LGBTQ)
+barchartGC(~infected + treatment,data=LGBTQ, type="percent")
+
+```
+
+This bar chart shows that members of the LGBTQ community are less likely to contract covid91 after reviewing the vaccine.
+
+## Numerical Results
+
+```{r}
+table1 <- xtabs(~infected + treatment, data=LGBTQ)
+rowPerc(table1)
+colPerc(table1)
+```
+
+The numerical data shows the results in percentages. Within the placebo group 80.00% of individuals got infected with covid91. While in the vaccine group 20.00% contracted covid91. This indicates that reveiving the vaccine as a LGBTQ community member significantly reduces the risk of contracted covid91.
+
+## Inferential Results
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+The Chi-square test shows that the p-value is 2.266e-06 and data the fisher exact test shows that the p-value is 7.269e-07 which is significantly lower than 0.05 which means we reject the null hypothesis.
+
+## Conclusion
+The bar chart shows that you are less likely to contract covid91 if you did receive the vaccine. The numerical data shows the results in percentages. Within the placebo group 80.00% of indivuals got infected with covid91. While in the vaccine group 20.00% contracted covid91. This indicates that recieving the vaccine as a LGBTQ member significantly reduces the risk of contracted covid91. The inferential data shows chi-squared p-value of 2.266e-06, this data also includes the fisher exact test that shows that the p-value is 7.269e-07 which is significantly lower than 0.05 which means we reject the null hypothesis. In summation these examples and simulations show that as a member of the LGBTQ community you are far less likely to contact covid91 if you receive the vaccine.
 
 ## Druggies
 
+## Methods
+
+Question: Is the vaccine effective in preventing covid91 in a drug user?
+
+$H_0$: The vaccine is not effective in preventing covid91 in  drug users.
+
+$H_A$: The vaccine is effective in preventing covid91 in drug users.
+
+infected~DrugUser(yes)
+categorical~categorical
+
+We'll be using Cat~Cat
+
+## Graphical Results
+
+```{r}
+DrugUser <- FinalDat[FinalDat$DrugUser=='yes',]
+```
+
+```{r}
+barchartGC(~infected + treatment,data=DrugUser)
+barchartGC(~infected + treatment,data=DrugUser, type="percent")
+
+```
+
+According to the bar chart you are more likely to get covid91 if recieve the vaccine as a drug user.
+
+## Numerical Results
+
+```{r}
+table1 <- xtabs(~infected + treatment, data=DrugUser)
+rowPerc(table1)
+colPerc(table1)
+```
+
+The numerical data shows the results in percentages. Within the placebo group 8.33% of individuals got infected with covid91. While in the vaccine group 91.67% contracted covid91. This indicates that receiving the vaccine as a drug user significantly increases the risk of contracted covid91.
+
+## Inferential Results
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+The chi-square test shows a p-value of 1.414e-10 data and the fisher exact test shows that the p-value is 3.261e-12 which is significantly lower than 0.05 which means we reject the null hypothesis.
+
+## Conclusion
+
+The bar chart shows that you are far more likely to contract Covid91 if you did receive the vaccine as a drug user. The numerical data shows the results in percentages. Within the placebo group 8.33% of individuals got infected with Covid91. While in the vaccine group 91.67% contracted covid-91.This indicates that receiving the vaccine as a drug user significantly increases the risk of contracting Covid-91. The inferential data shows a Chi-Squared P-Value of 1.414e-10, and the data includes a Fisher exact test showing that the P-Value is 3.261e-12 which is significantly lower than 0.05 which means we reject the null hypothesis.In summation these examples and simulations show that as a drug user you are far more likely to contract covid-91 if you receive the vaccine.
 
 # Overall Results and Conclusions
